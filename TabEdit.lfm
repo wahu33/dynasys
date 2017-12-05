@@ -1,127 +1,130 @@
 object TabEditForm: TTabEditForm
   Left = 279
+  Height = 277
   Top = 173
+  Width = 518
   ActiveControl = OkBtn
   BorderStyle = bsDialog
   Caption = 'Tabelleneditor'
   ClientHeight = 277
   ClientWidth = 518
   Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Arial'
-  Font.Style = []
   OnActivate = FormActivate
   OnPaint = FormPaint
-  PixelsPerInch = 96
+  LCLVersion = '1.7'
+  Visible = False
   object Label1: TLabel
     Left = 376
+    Height = 14
     Top = 8
-    Width = 47
-    Height = 13
+    Width = 43
     Caption = 'Eingang'
-    Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
     Font.Name = 'Arial'
     Font.Style = [fsBold]
+    ParentColor = False
     ParentFont = False
   end
   object Label2: TLabel
     Left = 440
+    Height = 14
     Top = 8
-    Width = 50
-    Height = 13
+    Width = 49
     Caption = 'Ausgang'
-    Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
     Font.Name = 'Arial'
     Font.Style = [fsBold]
+    ParentColor = False
     ParentFont = False
   end
   object xLabel: TLabel
     Left = 200
+    Height = 14
     Top = 256
-    Width = 23
-    Height = 13
+    Width = 21
     Caption = 'Zeit'
-    Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
     Font.Name = 'Arial'
     Font.Style = [fsBold]
+    ParentColor = False
     ParentFont = False
   end
   object y_max: TEdit
     Left = 8
+    Height = 22
     Top = 8
     Width = 65
-    Height = 21
-    TabOrder = 0
     OnKeyDown = KeyDown
+    TabOrder = 0
   end
   object InputListBox: TListBox
     Left = 376
+    Height = 177
     Top = 24
     Width = 57
-    Height = 177
-    ItemHeight = 13
+    ItemHeight = 0
     TabOrder = 1
   end
   object OutputListBox: TListBox
     Left = 440
+    Height = 177
     Top = 24
     Width = 57
-    Height = 177
-    ItemHeight = 13
+    ItemHeight = 0
     TabOrder = 2
   end
   object x_max: TEdit
     Left = 312
+    Height = 22
     Top = 248
     Width = 49
-    Height = 21
-    TabOrder = 3
     OnKeyUp = KeyDown
+    TabOrder = 3
   end
   object ObjectName: TEdit
     Left = 8
+    Height = 22
     Top = 56
     Width = 65
-    Height = 21
     TabOrder = 4
   end
   object x_min: TEdit
     Left = 80
+    Height = 22
     Top = 248
     Width = 41
-    Height = 21
-    TabOrder = 5
     OnKeyUp = KeyDown
+    TabOrder = 5
   end
   object y_min: TEdit
     Left = 8
+    Height = 22
     Top = 224
     Width = 57
-    Height = 21
-    TabOrder = 6
     OnKeyDown = KeyDown
+    TabOrder = 6
   end
   object Panel: TPanel
     Left = 88
+    Height = 233
     Top = 8
     Width = 281
-    Height = 233
     BevelInner = bvLowered
+    ClientHeight = 233
+    ClientWidth = 281
     TabOrder = 7
     object PaintBox: TImage
+      Cursor = crCross
       Left = 2
+      Height = 229
       Top = 2
       Width = 277
-      Height = 229
-      Cursor = crCross
       Align = alClient
       OnMouseDown = PaintBoxMouseDown
       OnMouseMove = PaintBoxMouseMove
@@ -130,13 +133,10 @@ object TabEditForm: TTabEditForm
   end
   object OkBtn: TBitBtn
     Left = 425
+    Height = 27
     Top = 244
     Width = 88
-    Height = 27
     Caption = 'OK'
-    ModalResult = 1
-    TabOrder = 8
-    OnClick = OkBtnClick
     Glyph.Data = {
       DE010000424DDE01000000000000760000002800000024000000120000000100
       0400000000006801000000000000000000001000000000000000000000000000
@@ -153,21 +153,25 @@ object TabEditForm: TTabEditForm
       33333333A222433333333333338F338F00003333333333333A22433333333333
       3338F38F000033333333333333A223333333333333338F830000333333333333
       333A333333333333333338330000333333333333333333333333333333333333
-      0000}
+      0000
+    }
     Margin = 2
+    ModalResult = 1
     NumGlyphs = 2
+    OnClick = OkBtnClick
     Spacing = -1
+    TabOrder = 8
   end
   object CancelBtn: TBitBtn
     Left = 425
+    Height = 27
     Top = 214
     Width = 88
-    Height = 27
     Caption = 'Abbruch'
-    TabOrder = 9
-    OnClick = CancelBtnClick
     Kind = bkCancel
     Margin = 2
+    OnClick = CancelBtnClick
     Spacing = -1
+    TabOrder = 9
   end
 end

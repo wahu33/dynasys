@@ -29,7 +29,7 @@ unit PhaseWin;
 interface
 
 uses
-  SysUtils, unix, Messages, Classes, Graphics, Controls,
+  SysUtils, (*unix,*) Messages, Classes, Graphics, Controls,
   Forms, StdCtrls, Buttons, LCLType, LCLProc, LCLIntf, LResources,
   (* ColorGrd ,*) Menus, Printers, ClipBrd, Dialogs, Diagram,
   ExtCtrls, Funktion, PhaseSelect, Liste, Numerik;

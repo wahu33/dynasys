@@ -22,7 +22,7 @@ unit Optionen;
 interface
 
 uses
-  SysUtils, unix, Messages, Classes, Graphics, Controls,
+  SysUtils, (*unix,*) Messages, Classes, Graphics, Controls,
   Forms, Dialogs, (* TabNotBk,*) StdCtrls, Buttons, ComCtrls;
 
 type

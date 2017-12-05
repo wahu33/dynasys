@@ -21,7 +21,7 @@ unit ZeitSelect;
 
 interface
 
-uses unix, Classes, LCLType, Graphics, Forms, Controls, StdCtrls, ColorBox,
+uses (*unix,*) Classes, LCLType, Graphics, Forms, Controls, StdCtrls, ColorBox,
   Buttons, ExtCtrls,
   Liste,SimObjekt, Dialogs, ComCtrls, ImgList, Diagram, ErrorTxt;
 const

@@ -19,26 +19,26 @@ object GraphForm: TGraphForm
   OnResize = FormResize
   OnShow = FormShow
   Position = poDefault
-  LCLVersion = '1.4.4.0'
+  LCLVersion = '1.7'
   Visible = True
   object ScrollBox1: TScrollBox
     Left = 0
-    Height = 272
+    Height = 233
     Top = 0
     Width = 446
     HorzScrollBar.Page = 90
     VertScrollBar.Page = 90
     Align = alClient
-    ClientHeight = 257
-    ClientWidth = 431
+    ClientHeight = 229
+    ClientWidth = 442
     Color = clBtnFace
     ParentColor = False
     TabOrder = 0
     object Image: TImage
       Left = 0
-      Height = 257
+      Height = 229
       Top = 0
-      Width = 431
+      Width = 442
       Align = alClient
       AutoSize = True
       Stretch = True

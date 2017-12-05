@@ -26,7 +26,7 @@ unit Tabselect;
 
 interface
 
-uses unix, Classes, Graphics, Forms, Controls, StdCtrls, LCLType,
+uses (*unix,*) Classes, Graphics, Forms, Controls, StdCtrls, LCLType,
   Buttons, ExtCtrls, Liste, SimObjekt, ComCtrls, Spin;
 const
   LB_ERR = -1;

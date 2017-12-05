@@ -29,7 +29,7 @@ unit DynaMain;
 interface
 
 uses
-  SysUtils, unix, Messages, Classes, Graphics, Controls,  LCLIntf,  LCLType,
+  SysUtils, (*unix,*) Messages, Classes, Graphics, Controls,  LCLIntf,  LCLType,
   Forms, Dialogs, StdCtrls, Buttons, ExtCtrls, Menus,   Liste, Info,   Numerik,
   DynaAbout, FileUtil, IniFiles, ErrorTxt, ModEditor, Printers, HelpIntfs,
   Tabelle, Gleichung, GraphWin, PhaseWin, Optionen, ShareDlg,

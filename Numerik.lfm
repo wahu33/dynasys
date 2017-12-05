@@ -17,7 +17,8 @@ object NumerikDlg: TNumerikDlg
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
   Position = poScreenCenter
-  LCLVersion = '1.4.4.0'
+  LCLVersion = '1.7'
+  Visible = False
   object Bevel1: TBevel
     Left = 8
     Height = 209
@@ -27,16 +28,16 @@ object NumerikDlg: TNumerikDlg
   end
   object Label1: TLabel
     Left = 85
-    Height = 13
+    Height = 14
     Top = 128
-    Width = 47
+    Width = 49
     Alignment = taRightJustify
     Caption = 'Startzeit:'
     ParentColor = False
   end
   object Label2: TLabel
     Left = 90
-    Height = 13
+    Height = 14
     Top = 160
     Width = 43
     Alignment = taRightJustify
@@ -45,9 +46,9 @@ object NumerikDlg: TNumerikDlg
   end
   object Label3: TLabel
     Left = 50
-    Height = 13
+    Height = 14
     Top = 192
-    Width = 79
+    Width = 82
     Alignment = taRightJustify
     Caption = 'Zeitintervall dt:'
     ParentColor = False
@@ -93,22 +94,22 @@ object NumerikDlg: TNumerikDlg
     Top = 24
     Width = 233
     Caption = 'Rechenverfahren'
-    ClientHeight = 61
-    ClientWidth = 225
+    ClientHeight = 62
+    ClientWidth = 229
     TabOrder = 3
     object EulerBtn: TRadioButton
       Left = 16
-      Height = 18
+      Height = 35
       Top = 8
-      Width = 91
+      Width = 108
       Caption = 'Euler-Cauchy'
       TabOrder = 0
     end
     object RungeBtn: TRadioButton
       Left = 16
-      Height = 18
+      Height = 35
       Top = 32
-      Width = 86
+      Width = 103
       Caption = 'Runge-Kutta'
       Checked = True
       TabOrder = 1

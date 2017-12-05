@@ -27,7 +27,7 @@ unit TabEdit;
 interface
 
 uses
-  unix, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  (*unix,*) Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, Buttons, ExtCtrls,
   SimObjekt,ErrorTxt,Util;
 

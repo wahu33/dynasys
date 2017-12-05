@@ -28,16 +28,20 @@ unit Info;
 
 interface
 
-uses unix, Classes, Graphics, Forms, Controls, Buttons, RichView,
+uses (*unix,*) Classes, Graphics, Forms, Controls, Buttons, RichView,
   StdCtrls, ExtCtrls, ComCtrls;
 
 type
+
+  { TModellInfo }
+
   TModellInfo = class(TForm)
     OKBtn: TBitBtn;
     CancelBtn: TBitBtn;
     HelpBtn: TBitBtn;
     Bevel1: TBevel;
     RichEdit1: TRichView;
+    RichView1: TRichView;
   private
     { Private declarations }
   public
@@ -56,9 +60,9 @@ implementation
      procedure TModellInfo.StoreData(W:TWriter);
      var i:integer;
      begin
-       W.WriteFloat(RichEdit1.Lines.Count);
-       for i:=0 to RichEdit1.Lines.count-1 do
-          W.WriteString(RichEdit1.Lines[i]);
+      // W.WriteFloat(RichEdit1.Lines.Count);
+      // for i:=0 to RichEdit1.Lines.count-1 do
+      //    W.WriteString(RichEdit1.Lines[i]);
      end;
 
      procedure TModellInfo.ReadData(R:TReader);
@@ -68,15 +72,15 @@ implementation
        self.clear;
        try
          count:=round(R.ReadFloat);
-         for i:=0 to count-1 do
-            RichEdit1.Lines.Append(R.ReadString);
+         //for i:=0 to count-1 do
+         //   RichEdit1.Lines.Append(R.ReadString);
        except ;
        end;
      end;
 
      procedure TModellInfo.Clear;
      begin
-       RichEdit1.Lines.Clear;
+      // RichEdit1.Lines.Clear;
      end;
 
 end.

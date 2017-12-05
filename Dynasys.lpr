@@ -8,7 +8,7 @@ uses
   {$IFDEF UNIX}{$IFDEF UseCThreads}
   cthreads,
   {$ENDIF}{$ENDIF}
-  Forms, Interfaces,
+  Forms, lazrichview, Interfaces,
   DynaMain in 'DynaMain.pas' {MainForm},
   DynaAbout in 'DynaAbout.pas' {AboutBox},
   ModEditor in 'ModEditor.pas' {Modelleditor},

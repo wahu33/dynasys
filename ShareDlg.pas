@@ -21,7 +21,7 @@ unit ShareDlg;
 
 interface
 
-uses unix, Classes, Graphics, Forms, Controls, Buttons,
+uses (*unix,*) Classes, Graphics, Forms, Controls, Buttons,
   StdCtrls, ExtCtrls, SysUtils, Dialogs, RegDialog;
 
 type

@@ -27,7 +27,7 @@ unit Tabelle;
 interface
 
 uses
-  SysUtils, unix, Messages, Classes, Graphics, Controls, LCLType,
+  SysUtils, (*unix,*) Messages, Classes, Graphics, Controls, LCLType,
   Forms, StdCtrls, Dialogs, Grids, Tabselect, Liste, SimObjekt, Menus;
 
 type

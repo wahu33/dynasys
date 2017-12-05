@@ -30,7 +30,7 @@ unit ModEditor;
 interface
 
 uses
-  SysUtils, unix, Messages, Classes, Graphics, Controls,  LCLType,
+  SysUtils, (*unix,*) Messages, Classes, Graphics, Controls,  LCLType,
   Forms, Dialogs, Buttons, ExtCtrls,StdCtrls, LResources, LCLResCache,
   SimObjekt, Liste, Menus, GEOUTIL, ObjectDlg, UTIL, ErrorTxt, TabEdit;
 

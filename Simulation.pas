@@ -25,7 +25,7 @@ unit Simulation;
 
 interface
 
-Uses Dialogs,unix,Forms, SysUtils,
+Uses Dialogs,(*unix,*)Forms, SysUtils,
      ErrorTxt, Liste, SimObjekt, Parser, Numerik, Tabelle, GraphWin, PhaseWin;
 
 Type TSimulator = Class

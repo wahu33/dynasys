@@ -25,10 +25,13 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="1">
+    <RequiredPackages Count="2">
       <Item1>
-        <PackageName Value="LCL"/>
+        <PackageName Value="lazrichview"/>
       </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
     </RequiredPackages>
     <Units Count="31">
       <Unit0>
@@ -45,7 +48,9 @@
       <Unit2>
         <Filename Value="DynaAbout.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="AboutBox"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit2>
       <Unit3>
         <Filename Value="GeoUtil.pas"/>
@@ -68,22 +73,30 @@
       <Unit7>
         <Filename Value="Einstell.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="EinstellDlg"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit7>
       <Unit8>
         <Filename Value="Gleichung.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="Gleichungen"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit8>
       <Unit9>
         <Filename Value="GraphWin.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="GraphForm"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit9>
       <Unit10>
         <Filename Value="Info.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModellInfo"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit10>
       <Unit11>
         <Filename Value="ModEditor.pas"/>
@@ -125,7 +138,9 @@
       <Unit18>
         <Filename Value="RegDialog.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="RegisterDlg"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit18>
       <Unit19>
         <Filename Value="ShareDlg.pas"/>
@@ -166,7 +181,9 @@
       <Unit25>
         <Filename Value="Numerik.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="NumerikDlg"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit25>
       <Unit26>
         <Filename Value="Optionen.pas"/>
@@ -211,7 +228,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="/Developer/lazarus/components/richview/"/>
+      <OtherUnitFiles Value="/Developer/lazarus/components/richview"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>

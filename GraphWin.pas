@@ -22,7 +22,7 @@ unit GraphWin;
 interface
 
 uses
-  SysUtils, unix, Messages, Classes, Graphics, Controls,
+  SysUtils, (*unix,*) Messages, Classes, Graphics, Controls,
   Forms, StdCtrls, Buttons, LCLType, Menus, Printers, ClipBrd, Dialogs,
   ExtCtrls,
   Funktion, ZeitSelect,

@@ -25,7 +25,7 @@ unit ObjectDlg;
 
 interface
 
-uses unix, LCLType, Classes, Graphics, Forms, Controls, Buttons,
+uses (*unix,*) LCLType, Classes, Graphics, Forms, Controls, Buttons,
   StdCtrls, ExtCtrls, Dialogs, SysUtils,
   SimObjekt, ErrorTxt, Parser, Util, Liste, TabEdit;
 

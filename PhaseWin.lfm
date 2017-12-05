@@ -1,48 +1,52 @@
 object PhaseForm: TPhaseForm
   Left = 684
+  Height = 272
   Top = 226
+  Width = 446
   ActiveControl = ScrollBox1
-  AutoScroll = False
   Caption = 'Phasendiagramm'
   ClientHeight = 272
   ClientWidth = 446
   Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
   Font.Color = clBlack
   Font.Height = -13
   Font.Name = 'Courier New'
   Font.Style = [fsBold]
   FormStyle = fsMDIChild
   Menu = MainMenu1
-  Position = poDefault
-  Visible = True
   OnClose = FormClose
   OnCreate = FormCreate
   OnResize = FormResize
   OnShow = FormShow
-  PixelsPerInch = 96
+  Position = poDefault
+  LCLVersion = '1.7'
+  Visible = True
   object ScrollBox1: TScrollBox
     Left = 0
+    Height = 233
     Top = 0
     Width = 446
-    Height = 272
+    HorzScrollBar.Page = 90
+    VertScrollBar.Page = 90
     Align = alClient
+    ClientHeight = 229
+    ClientWidth = 442
     Color = clBtnFace
     ParentColor = False
     TabOrder = 0
     object Image: TImage
       Left = 0
+      Height = 229
       Top = 0
       Width = 442
-      Height = 268
       Align = alClient
       AutoSize = True
       Stretch = True
     end
   end
   object MainMenu1: TMainMenu
-    Left = 240
-    Top = 32
+    left = 240
+    top = 32
     object Graphik1: TMenuItem
       Caption = '&Graphik'
       GroupIndex = 3

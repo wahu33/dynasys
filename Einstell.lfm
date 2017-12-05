@@ -1,6 +1,8 @@
 object EinstellDlg: TEinstellDlg
   Left = 242
+  Height = 273
   Top = 134
+  Width = 427
   BorderStyle = bsDialog
   Caption = 'Arbeitsblattdialog mit Seitenregistern'
   ClientHeight = 273
@@ -8,53 +10,53 @@ object EinstellDlg: TEinstellDlg
   Font.Color = clWindowText
   Font.Height = -13
   Font.Name = 'Courier New'
-  Font.Style = []
-  PixelsPerInch = 96
+  LCLVersion = '1.7'
+  Visible = False
   object OKBtn: TBitBtn
     Left = 328
+    Height = 27
     Top = 50
     Width = 77
-    Height = 27
     Default = True
     DefaultCaption = True
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Arial'
     Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 1
     Kind = bkOK
     Margin = 2
+    ParentFont = False
     Spacing = -1
+    TabOrder = 0
   end
   object CancelBtn: TBitBtn
     Left = 328
+    Height = 27
     Top = 82
     Width = 77
-    Height = 27
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Arial'
     Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 2
     Kind = bkCancel
     Margin = 2
+    ParentFont = False
     Spacing = -1
+    TabOrder = 2
   end
   object HelpBtn: TBitBtn
     Left = 328
+    Height = 27
     Top = 114
     Width = 77
-    Height = 27
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Arial'
     Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 3
     Kind = bkHelp
     Margin = 2
+    ParentFont = False
     Spacing = -1
+    TabOrder = 1
   end
 end

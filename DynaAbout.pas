@@ -21,7 +21,7 @@ unit DynaAbout;
 
 interface
 
-uses unix, Classes, Graphics, Forms, Controls, StdCtrls,
+uses (*unix,*) Classes, Graphics, Forms, Controls, StdCtrls,
   Buttons, ExtCtrls;
 
 type

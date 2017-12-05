@@ -28,7 +28,7 @@ unit Diagram;
 *}
 interface
 
-uses Graphics, unix, Classes, SysUtils,  LCLType, LCLIntf, IntfGraphics,
+uses Graphics, (*unix,*) Classes, SysUtils,  LCLType, LCLIntf, IntfGraphics,
      Funktion;
 const maxGraph = 4;
 

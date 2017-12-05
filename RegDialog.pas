@@ -21,7 +21,7 @@ unit RegDialog;
 
 interface
 
-uses SysUtils, unix, Classes, Graphics, Forms, Controls, Buttons,
+uses SysUtils, (*unix,*) Classes, Graphics, Forms, Controls, Buttons,
   StdCtrls, ExtCtrls, Dialogs, IniFiles, Register;
 
 type

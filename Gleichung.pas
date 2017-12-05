@@ -22,7 +22,7 @@ unit Gleichung;
 interface
 
 uses
-  SysUtils, unix, Messages, Classes, Graphics, Controls, LCLType,
+  SysUtils, (*unix,*) Messages, Classes, Graphics, Controls, LCLType,
   Forms, Dialogs, StdCtrls,
   Liste, SimObjekt, ObjectDlg, TabEdit;
 

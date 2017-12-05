@@ -21,7 +21,7 @@ Unit SimObjekt;
 
 interface
 
-uses SysUtils, unix, Forms, Messages, Classes, Graphics, Dialogs,  LCLType,
+uses SysUtils, (*unix,*) Forms, Messages, Classes, Graphics, Dialogs,  LCLType,
      LCLProc, Parser, LCLIntf;
      (*Status,*) (*,NumerikParameter*)
 

@@ -1,37 +1,35 @@
 object Gleichungen: TGleichungen
   Left = 234
+  Height = 300
   Top = 125
   Width = 435
-  Height = 300
   Caption = 'Gleichungen'
+  ClientHeight = 300
+  ClientWidth = 435
   Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -13
   Font.Name = 'Courier New'
-  Font.Style = []
   FormStyle = fsMDIChild
-  Position = poDefault
-  Visible = True
   OnClose = FormClose
   OnCreate = FormCreate
-  PixelsPerInch = 96
+  Position = poDefault
+  LCLVersion = '1.7'
+  Visible = True
   object ListBox1: TListBox
     Left = 0
+    Height = 300
     Top = 0
-    Width = 427
-    Height = 266
+    Width = 435
     Align = alClient
     ExtendedSelect = False
-    Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -12
     Font.Name = 'Arial'
-    Font.Style = []
-    ItemHeight = 15
-    ParentFont = False
-    TabOrder = 0
+    ItemHeight = 0
     OnDblClick = ListBox1DblClick
     OnKeyPress = ListBox1KeyPress
+    ParentFont = False
+    TabOrder = 0
   end
 end

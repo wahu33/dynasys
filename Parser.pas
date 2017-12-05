@@ -21,7 +21,7 @@ Unit Parser;
 
 interface
 
-uses SysUtils, unix, Classes, Dialogs,
+uses SysUtils, (*unix,*) Classes, Dialogs,
      Util;
 
 type

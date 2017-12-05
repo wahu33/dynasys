@@ -21,7 +21,7 @@ unit Geoutil;
 
 interface
 
-uses SysUtils, unix,  Classes, Graphics, Dialogs,
+uses SysUtils, (*unix,*)  Classes, Graphics, Dialogs,
      SimObjekt;
 
 procedure ZeichneWolke(x,y:Integer;art:LongInt);
