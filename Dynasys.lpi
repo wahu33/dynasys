@@ -33,7 +33,7 @@
         <PackageName Value="LCL"/>
       </Item2>
     </RequiredPackages>
-    <Units Count="31">
+    <Units Count="28">
       <Unit0>
         <Filename Value="Dynasys.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -136,89 +136,71 @@
         <IsPartOfProject Value="True"/>
       </Unit17>
       <Unit18>
-        <Filename Value="RegDialog.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="RegisterDlg"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-      </Unit18>
-      <Unit19>
-        <Filename Value="ShareDlg.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="SharewareDlg"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-      </Unit19>
-      <Unit20>
-        <Filename Value="Register.pas"/>
-        <IsPartOfProject Value="True"/>
-      </Unit20>
-      <Unit21>
         <Filename Value="PhaseSelect.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="PhasenAuswahl"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-      </Unit21>
-      <Unit22>
+      </Unit18>
+      <Unit19>
         <Filename Value="PhaseWin.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="PhaseForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-      </Unit22>
-      <Unit23>
+      </Unit19>
+      <Unit20>
         <Filename Value="TabEdit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="TabEditForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-      </Unit23>
-      <Unit24>
+      </Unit20>
+      <Unit21>
         <Filename Value="Liste.pas"/>
         <IsPartOfProject Value="True"/>
-      </Unit24>
-      <Unit25>
+      </Unit21>
+      <Unit22>
         <Filename Value="Numerik.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="NumerikDlg"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-      </Unit25>
-      <Unit26>
+      </Unit22>
+      <Unit23>
         <Filename Value="Optionen.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="OptionenDlg"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-      </Unit26>
-      <Unit27>
+      </Unit23>
+      <Unit24>
         <Filename Value="TabSelect.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="TabelleDlg"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Tabselect"/>
-      </Unit27>
-      <Unit28>
+      </Unit24>
+      <Unit25>
         <Filename Value="Util.pas"/>
         <IsPartOfProject Value="True"/>
-      </Unit28>
-      <Unit29>
+      </Unit25>
+      <Unit26>
         <Filename Value="ZeitSelect.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="ZeitkurveDlg"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-      </Unit29>
-      <Unit30>
+      </Unit26>
+      <Unit27>
         <Filename Value="ZeitDiag.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="ZeitkurveForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Zeitdiag"/>
-      </Unit30>
+      </Unit27>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

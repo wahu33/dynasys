@@ -31,9 +31,6 @@ uses
   Diagram in 'Diagram.pas',
   Optionen in 'Optionen.pas' {OptionenDlg},
   Tabselect in 'TabSelect.pas' {TabelleDlg},
-  RegDialog in 'RegDialog.pas' {RegisterDlg},
-  ShareDlg in 'ShareDlg.pas' {SharewareDlg},
-  Register in 'Register.pas',
   PhaseSelect in 'PhaseSelect.pas' {PhasenAuswahl},
   PhaseWin in 'PhaseWin.pas' {PhaseForm},
   GraphWin in 'GraphWin.pas' {GraphForm},
@@ -51,8 +48,6 @@ begin
   Application.CreateForm(TOptionenDlg, OptionenDlg);
   Application.CreateForm(TTabelleDlg, TabelleDlg);
   Application.CreateForm(TZeitkurveDlg, ZeitkurveDlg);
-  Application.CreateForm(TRegisterDlg, RegisterDlg);
-  Application.CreateForm(TSharewareDlg, SharewareDlg);
   Application.CreateForm(TPhasenAuswahl, PhasenAuswahl);
   Application.CreateForm(TTabEditForm, TabEditForm);
 //  Application.CreateForm(TEinstellDlg, EinstellDlg);

@@ -43,12 +43,11 @@ object MainForm: TMainForm
   OnCreate = FormCreate
   Position = poDefault
   ShowHint = True
-  LCLVersion = '1.7'
   Visible = True
   object StatusLine: TPanel
     Left = 0
     Height = 21
-    Top = 482
+    Top = 521
     Width = 758
     Align = alBottom
     Alignment = taLeftJustify
@@ -1039,7 +1038,7 @@ object MainForm: TMainForm
     TabOrder = 0
   end
   object MainMenu: TMainMenu
-    left = 28
+    left = 224
     top = 48
     object FileMenu: TMenuItem
       Caption = '&Datei'
@@ -1191,14 +1190,6 @@ object MainForm: TMainForm
       object N3: TMenuItem
         Caption = '-'
       end
-      object Shareware1: TMenuItem
-        Caption = 'Shareware'
-        OnClick = Shareware1Click
-      end
-      object Registrierung1: TMenuItem
-        Caption = 'Registrierung...'
-        OnClick = Registrierung1Click
-      end
       object N7: TMenuItem
         Caption = '-'
       end
@@ -1212,19 +1203,19 @@ object MainForm: TMainForm
   object OpenDialog: TOpenDialog
     DefaultExt = '.dyn'
     Filter = 'Modelldatei|*.dyn'
-    left = 22
-    top = 87
+    left = 208
+    top = 128
   end
   object SaveDialog: TSaveDialog
     Title = 'Modelldatei speichern'
     DefaultExt = '.dyn'
     Filter = 'Modelldatei|*.dyn'
-    left = 28
-    top = 189
+    left = 200
+    top = 216
   end
   object Timer1: TTimer
     OnTimer = Timer1Timer
-    left = 80
-    top = 56
+    left = 88
+    top = 184
   end
 end

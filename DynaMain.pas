@@ -95,9 +95,7 @@ type
     N5: TMenuItem;
     Gauge1: TProgressBar;
     N6: TMenuItem;
-    Registrierung1: TMenuItem;
     N7: TMenuItem;
-    Shareware1: TMenuItem;
     Timer1: TTimer;  { &Inhalt }
     procedure FormCreate(Sender: TObject);
     procedure ShowHint(Sender: TObject);
@@ -127,8 +125,6 @@ type
     procedure EinstellungenClick(Sender: TObject);
     procedure Zeitdiagramm1Click(Sender: TObject);
     procedure PhasendiagrammClick(Sender: TObject);
-    procedure Shareware1Click(Sender: TObject);
-    procedure Registrierung1Click(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
    private
     DateiVorhanden : Boolean;
@@ -171,22 +167,8 @@ begin
   Application.OnHint := ShowHint;
   (*Screen.OnActiveFormChange := UpdateMenuItems;*)
 
-  // Registrierung --------------------------------------------
-  HomePath:=Paramstr(0);
-  HomePath:=ExtractFilePath(HomePath);
-  DynasysIni := TIniFile.Create(HomePath+'Dynasys.ini');
-  Name    :=DynasysIni.ReadString('Registrierung','Name','');
-  Strasse :=DynasysIni.ReadString('Registrierung','Strasse','');
-  Wohnort :=DynasysIni.ReadString('Registrierung','Wohnort','');
-  Nummer  :=DynasysIni.ReadString('Registrierung','Nummer','');
-  Registriert := LicenceOk(Nummer,Name,Strasse,Wohnort);
-  DynasysIni.free;
-  if registriert then begin
-    DefaultStr:=Name+', '+Wohnort;
-    shareware1.visible:=false;
-  end
-  else
-      DefaultStr:='Der Einsatz dieser Version im Unterricht ist nicht erlaubt!';
+
+  DefaultStr:='Dynasys';
 
   StatusLine.Caption:=DefaultStr;
 end;
@@ -441,15 +423,6 @@ begin
   OptionenDlg.ShowModal;
 end;
 
-procedure TMainForm.Shareware1Click(Sender: TObject);
-begin
-  SharewareDlg.ShowModal;
-end;
-
-procedure TMainForm.Registrierung1Click(Sender: TObject);
-begin
-   RegisterDlg.ShowModal;
-end;
 
 procedure TMainForm.Timer1Timer(Sender: TObject);
 begin
