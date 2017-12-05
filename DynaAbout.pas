@@ -25,6 +25,9 @@ uses (*unix,*) Classes, Graphics, Forms, Controls, StdCtrls,
   Buttons, ExtCtrls;
 
 type
+
+  { TAboutBox }
+
   TAboutBox = class(TForm)
     Panel1: TPanel;
     OKButton: TBitBtn;
@@ -37,6 +40,7 @@ type
     Label2: TLabel;
     Label3: TLabel;
     procedure FormCreate(Sender: TObject);
+    procedure OKButtonClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,6 +59,11 @@ uses Dynamain;
 procedure TAboutBox.FormCreate(Sender: TObject);
 begin
 Version.Caption := 'Version ' + MainForm.Version;
+end;
+
+procedure TAboutBox.OKButtonClick(Sender: TObject);
+begin
+  AboutBox.Close;
 end;
 
 end.

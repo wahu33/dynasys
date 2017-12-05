@@ -3,6 +3,7 @@ object OptionenDlg: TOptionenDlg
   Height = 273
   Top = 315
   Width = 427
+  ActiveControl = OKBtn
   BorderStyle = bsDialog
   Caption = 'Optionen Dialog'
   ClientHeight = 273
@@ -11,7 +12,6 @@ object OptionenDlg: TOptionenDlg
   Font.Color = clWindowText
   Font.Height = -13
   Font.Name = 'Courier New'
-  LCLVersion = '1.7'
   Visible = False
   object OKBtn: TBitBtn
     Left = 328

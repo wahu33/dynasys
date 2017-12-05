@@ -147,12 +147,14 @@ object AboutBox: TAboutBox
     Height = 27
     Top = 210
     Width = 77
+    Caption = 'OK'
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     Kind = bkOK
     Margin = 2
+    OnClick = OKButtonClick
     ParentFont = False
     Spacing = -1
     TabOrder = 1

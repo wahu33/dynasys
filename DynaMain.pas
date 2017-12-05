@@ -1,4 +1,4 @@
-(* Dynasys, http://code.google.com/p/dynasys/
+(* Dynasys, http://github.com/wahu33/dynasys/
  * Copyright (C) 2009  Dynasys
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -132,8 +132,6 @@ type
     Version        : String;
     FileName       : String;
     ChangeFlag     : Boolean;
-    Name,Strasse,Wohnort,Nummer : String;
-    registriert    : Boolean;
   end;
 
 var
@@ -149,7 +147,7 @@ var DynasysIni : TIniFile;
     HomePath  : string;
     DefaultStr: string;
 begin
-  MainForm.Version := '2.0.2';
+  MainForm.Version := '3.0';
   MainForm.Caption := 'Dynasys '+MainForm.Version;
   Application.Title := 'Dynasys '+MainForm.Version;
   Application.OnHint := ShowHint;
@@ -166,9 +164,7 @@ begin
   Application.OnHint := ShowHint;
   (*Screen.OnActiveFormChange := UpdateMenuItems;*)
 
-
   DefaultStr:='Dynasys';
-
   StatusLine.Caption:=DefaultStr;
 end;
 
