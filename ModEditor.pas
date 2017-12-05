@@ -151,7 +151,6 @@ begin
   self.Left:=10;
   self.width:=round(0.9*MainForm.width);
   self.height:=round(0.8*MainForm.height);
-
 end;
 
 procedure TModelleditor.Clear;

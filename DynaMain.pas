@@ -423,7 +423,6 @@ procedure TMainForm.Timer1Timer(Sender: TObject);
 begin
    Timer1.Enabled:=false;
    Timer1.Free;
-   //if not registriert then ShareWareDlg.ShowModal;
 end;
 
 end.
