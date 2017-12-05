@@ -43,11 +43,12 @@ object MainForm: TMainForm
   OnCreate = FormCreate
   Position = poDefault
   ShowHint = True
+  LCLVersion = '1.7'
   Visible = True
   object StatusLine: TPanel
     Left = 0
     Height = 21
-    Top = 521
+    Top = 482
     Width = 758
     Align = alBottom
     Alignment = taLeftJustify
