@@ -143,9 +143,6 @@ implementation
 {$R *.lfm}
 
 procedure TMainForm.FormCreate(Sender: TObject);
-var DynasysIni : TIniFile;
-    HomePath  : string;
-    DefaultStr: string;
 begin
   MainForm.Version := '3.0';
   MainForm.Caption := 'Dynasys '+MainForm.Version;
@@ -156,16 +153,14 @@ begin
   FileName:='';
   Gauge1.Visible:=false;
   self.left:=screen.width  div 20;
-  self.top:=screen.width div 40;
-  self.width:=screen.width*9 div 10;
-  self.height:=screen.height*9 div 10;;
+  self.top:=screen.width div 60;
+  self.width:=00;
+  self.height:=32;
   // Status-Zeile ---------------------------------------------
   StatusLine.Caption:='Dynasys '+MainForm.Version;
   Application.OnHint := ShowHint;
   (*Screen.OnActiveFormChange := UpdateMenuItems;*)
 
-  DefaultStr:='Dynasys';
-  StatusLine.Caption:=DefaultStr;
 end;
 
 procedure TMainForm.ShowHint(Sender: TObject);

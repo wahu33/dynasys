@@ -1,11 +1,11 @@
 object MainForm: TMainForm
   Left = 431
-  Height = 542
+  Height = 40
   Top = 144
-  Width = 758
-  Caption = 'Dynasys 2.0.2'
-  ClientHeight = 542
-  ClientWidth = 758
+  Width = 844
+  Caption = 'Dynasys 3.0'
+  ClientHeight = 40
+  ClientWidth = 844
   Color = clBtnFace
   Font.Color = clWindowText
   Font.Height = -11
@@ -47,8 +47,8 @@ object MainForm: TMainForm
   object StatusLine: TPanel
     Left = 0
     Height = 21
-    Top = 521
-    Width = 758
+    Top = 19
+    Width = 844
     Align = alBottom
     Alignment = taLeftJustify
     BorderWidth = 2
@@ -63,10 +63,10 @@ object MainForm: TMainForm
     Left = 0
     Height = 33
     Top = 0
-    Width = 758
+    Width = 844
     Align = alTop
     ClientHeight = 33
-    ClientWidth = 758
+    ClientWidth = 844
     TabOrder = 1
     object SpeedButton1: TSpeedButton
       Left = 8
@@ -1031,15 +1031,14 @@ object MainForm: TMainForm
     end
   end
   object Gauge1: TProgressBar
-    Left = 63
-    Height = 40
-    Top = 59
-    Width = 98
+    Left = 704
+    Height = 24
+    Top = 0
+    Width = 82
     TabOrder = 0
   end
   object MainMenu: TMainMenu
-    left = 224
-    top = 48
+    left = 664
     object FileMenu: TMenuItem
       Caption = '&Datei'
       object FileNewItem: TMenuItem
@@ -1203,19 +1202,16 @@ object MainForm: TMainForm
   object OpenDialog: TOpenDialog
     DefaultExt = '.dyn'
     Filter = 'Modelldatei|*.dyn'
-    left = 208
-    top = 128
+    left = 616
   end
   object SaveDialog: TSaveDialog
     Title = 'Modelldatei speichern'
     DefaultExt = '.dyn'
     Filter = 'Modelldatei|*.dyn'
-    left = 200
-    top = 216
+    left = 488
   end
   object Timer1: TTimer
     OnTimer = Timer1Timer
-    left = 88
-    top = 184
+    left = 560
   end
 end
