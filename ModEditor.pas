@@ -637,10 +637,8 @@ end;
 procedure TModelleditor.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
-
-if(Key=VK_DELETE) then
-self.Lschen1.Click;
-
+  if(Key=VK_DELETE) then
+    self.Lschen1.Click;
 end;
 
 end.

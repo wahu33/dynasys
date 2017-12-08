@@ -18,8 +18,7 @@ object ObjektDialog: TObjektDialog
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
   Position = poScreenCenter
-  LCLVersion = '1.7'
-  Visible = False
+  LCLVersion = '1.8.0.4'
   object Bevel1: TBevel
     Left = 8
     Height = 265
@@ -29,15 +28,15 @@ object ObjektDialog: TObjektDialog
   end
   object Label1: TLabel
     Left = 16
-    Height = 14
+    Height = 13
     Top = 16
-    Width = 53
+    Width = 54
     Caption = 'Eingänge:'
     ParentColor = False
   end
   object Label2: TLabel
     Left = 16
-    Height = 14
+    Height = 13
     Top = 160
     Width = 34
     Caption = 'Name:'
@@ -45,15 +44,15 @@ object ObjektDialog: TObjektDialog
   end
   object Label3: TLabel
     Left = 16
-    Height = 14
+    Height = 13
     Top = 200
-    Width = 46
+    Width = 47
     Caption = 'Eingabe:'
     ParentColor = False
   end
   object Label4: TLabel
     Left = 256
-    Height = 14
+    Height = 13
     Top = 16
     Width = 65
     Caption = 'Funktionen:'
@@ -100,11 +99,13 @@ object ObjektDialog: TObjektDialog
     Width = 121
     ItemHeight = 0
     OnClick = ListBox1Click
+    ScrollWidth = 119
     TabOrder = 3
+    TopIndex = -1
   end
   object Edit1: TEdit
     Left = 16
-    Height = 22
+    Height = 25
     Top = 176
     Width = 329
     TabOrder = 4
@@ -375,7 +376,9 @@ object ObjektDialog: TObjektDialog
     Width = 97
     ItemHeight = 0
     OnClick = ListBox2Click
+    ScrollWidth = 95
     TabOrder = 24
+    TopIndex = -1
   end
   object BKlaAuf: TButton
     Left = 144

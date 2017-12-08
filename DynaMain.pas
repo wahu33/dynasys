@@ -245,7 +245,7 @@ begin
     (*MainForm.Caption:=FileName;*)
     DateiVorhanden:=true;
     // Falls Datei vorhanden ist - nachfragen
-    if FileExistsUTF8(FileName) { *Konvertiert von FileExists* } then
+    if FileExists(FileName) { *Konvertiert von FileExists* } then
        if MessageDlg('Wollen Sie ' + ExtractFileName(FileName)
          + ' wirklich überschreiben?',mtWarning,[mbYes,mbNo],0) <> mrYes
     then exit;

@@ -57,5 +57,6 @@ begin
 //  Application.CreateForm(TTabForm, TabForm);
 //  Application.CreateForm(TZeitkurveForm, ZeitkurveForm);
   MainForm.SetBounds(0,0,screen.width,70);
+  ModellEditor.SetBounds(0,100,screen.width*8 div 10,screen.height*7 div 10);
   Application.Run;
 end.

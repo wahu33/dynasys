@@ -41,16 +41,13 @@ uses ModEditor;
 procedure ZeichneWolke(x,y:Integer;art:LongInt);
 const r=9;
       s=1;
+
 begin
   with  ModellEditor.Modell.Canvas do begin
- (*   Arc(x+r-s,y-r+s,x-s,y+s, x,y,x,y);
-    Arc(x-r+s,y-r+s,x+s,y+s, x,y,x,y);
-    Arc(x-r+s,y+r-s,x+s,y-s, x,y,x,y);
-    Arc(x+r-s,y+r-s,x-s,y-s, x,y,x,y);     *)
-    Arc(x+r-s,y-r,x-s,y, 0,5760); //4320);
-    Arc(x-r,y-r,x,y, 0,5760); //4320);
-    Arc(x-r,y+r-s,x,y-s,  0,5760); //4320);
-    Arc(x+r-s,y+r-s,x-s,y-s,  0,5760); //4320);
+    Ellipse(x+r-s, y-r+s, x-s, y+s);
+    Ellipse(x-r+s, y-r+s, x+s, y+s);
+    Ellipse(x-r+s, y+r-s, x+s, y-s);
+    Ellipse(x+r-s, y+r-s, x-s, y-s);
   end;
 end;
 

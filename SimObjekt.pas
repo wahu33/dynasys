@@ -146,26 +146,26 @@ Type
     End;
 
   TZustandObjekt = class(TSimuObjekt)
-              Procedure   Init(AMitte:TPoint;AName:NameStr);virtual;
-             Procedure   Load (Var S:TReader);             override;
-             Procedure   Loesche;                          override;
-             Procedure   Zeichne;                          override;
-             procedure   ZeichneMarkierung;                override;
-             function    istObjekt(x,y:integer):boolean;   override;
-             Procedure   Verschiebe(dx,dy:Integer);        override;
-             Procedure   VerbindeZufluss(zgr:TSimuObjekt); virtual;
-             Procedure   VerbindeAbfluss(zgr:TSimuObjekt); virtual;
-             Procedure   LoescheZuFluss (zgr:TSimuObjekt); virtual;
-             Procedure   LoescheAbfluss (zgr:TSimuObjekt); virtual;
-             Procedure   Store(Var S:TWriter);             override;
-             Procedure   ErzeugeZeiger;                    override;
-           public
-             StartWert : ParserPtr;
-             k1,k2,k3,k4 : Real;    { Runge-Verfahren }
-             ZuflussMax,AbFlussMax : integer;
-             Abfluesse,ZuFluesse : Array [1..MaxFluesse] of
-                    Record zgr:TSimuObjekt; index:Integer End;
-         End;
+     Procedure   Init(AMitte:TPoint;AName:NameStr);virtual;
+       Procedure   Load (Var S:TReader);             override;
+       Procedure   Loesche;                          override;
+       Procedure   Zeichne;                          override;
+       procedure   ZeichneMarkierung;                override;
+       function    istObjekt(x,y:integer):boolean;   override;
+       Procedure   Verschiebe(dx,dy:Integer);        override;
+       Procedure   VerbindeZufluss(zgr:TSimuObjekt); virtual;
+       Procedure   VerbindeAbfluss(zgr:TSimuObjekt); virtual;
+       Procedure   LoescheZuFluss (zgr:TSimuObjekt); virtual;
+       Procedure   LoescheAbfluss (zgr:TSimuObjekt); virtual;
+       Procedure   Store(Var S:TWriter);             override;
+       Procedure   ErzeugeZeiger;                    override;
+     public
+       StartWert : ParserPtr;
+       k1,k2,k3,k4 : Real;    { Runge-Verfahren }
+       ZuflussMax,AbFlussMax : integer;
+       Abfluesse,ZuFluesse : Array [1..MaxFluesse] of
+       Record zgr:TSimuObjekt; index:Integer End;
+     End;
 
 
    TWolkeObjekt = class(TSimuObjekt)
@@ -239,9 +239,6 @@ Begin
 End;
 
 {======================================================================================== }
-{======================================================================================== }
-{======================================================================================== }
-
 
 procedure TSimuObjekt.Init(x,y:Integer;AName:NameStr);
 Begin
@@ -425,9 +422,9 @@ End;
 Procedure   TSimuObjekt.VerbindeAusgang(zgr:TSimuObjekt);
 Begin
   If AusgangMax<MaxVerb Then Begin
-   Inc(AusgangMax);
-   Ausgaenge[AusgangMax].Zgr:=zgr;
-   Ausgaenge[AusgangMax].index:=ObjektListe.IndexOf(zgr);
+     Inc(AusgangMax);
+     Ausgaenge[AusgangMax].Zgr:=zgr;
+     Ausgaenge[AusgangMax].index:=ObjektListe.IndexOf(zgr);
   End;
 End;
 
@@ -749,7 +746,7 @@ begin
 end;
 
 
-Procedure   TWertObjekt.Zeichne;
+Procedure TWertObjekt.Zeichne;
 Begin
   with ModellEditor.Modell.Canvas do begin
     if EingangMax=0 then Pen.Color:=clRed;
@@ -759,7 +756,6 @@ Begin
       if xtbf=EditTab then
          TextOut(Mitte.x-TextWidth('~') div 2,
                               Mitte.y-TextHeight('~')div 2,'~');
-
     end;
     Pen.Color:=clBlack;
   end;

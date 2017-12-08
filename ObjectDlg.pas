@@ -166,8 +166,11 @@ end;
 
 procedure TObjektDialog.ListBox1Click(Sender: TObject);
 begin
-  Memo1.SelText:=ListBox1.items[ListBox1.ItemIndex];
-  Memo1.SetFocus;
+  if ListBox1.items.count >0 then
+    begin
+      Memo1.SelText:=ListBox1.items[ListBox1.ItemIndex];
+      Memo1.SetFocus;
+    end
 end;
 
 procedure TObjektDialog.ButtonClick(Sender: TObject);
