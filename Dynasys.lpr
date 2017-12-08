@@ -56,5 +56,6 @@ begin
 //  Application.CreateForm(TPhaseForm, PhaseForm);
 //  Application.CreateForm(TTabForm, TabForm);
 //  Application.CreateForm(TZeitkurveForm, ZeitkurveForm);
+  MainForm.SetBounds(0,0,screen.width,70);
   Application.Run;
 end.

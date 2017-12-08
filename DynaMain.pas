@@ -144,7 +144,7 @@ implementation
 
 procedure TMainForm.FormCreate(Sender: TObject);
 begin
-  MainForm.Version := '3.0';
+  MainForm.Version := '3.0 beta';
   MainForm.Caption := 'Dynasys '+MainForm.Version;
   Application.Title := 'Dynasys '+MainForm.Version;
   Application.OnHint := ShowHint;
@@ -152,10 +152,6 @@ begin
   ChangeFlag:=false;
   FileName:='';
   Gauge1.Visible:=false;
-  self.left:=screen.width  div 20;
-  self.top:=screen.width div 60;
-  self.width:=00;
-  self.height:=32;
   // Status-Zeile ---------------------------------------------
   StatusLine.Caption:='Dynasys '+MainForm.Version;
   Application.OnHint := ShowHint;
