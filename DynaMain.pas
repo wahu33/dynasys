@@ -21,15 +21,16 @@ unit DynaMain;
 
 (*
   Dynasys-Hauptfenster (als MDI-Application)
+  Lazarus unterstützt keine echten MDI-Anwendungen.
   Autor: Walter Hupfeld
-  Version: 2.0
-  zuletzt bearbeitet:  3.9.2003
+  Version: 3.0
+  zuletzt bearbeitet:  10.12.2017
 *)
 
 interface
 
 uses
-  SysUtils, (*unix,*) Messages, Classes, Graphics, Controls,  LCLIntf,  LCLType,
+  SysUtils, Messages, Classes, Graphics, Controls,  LCLIntf,  LCLType,
   Forms, Dialogs, StdCtrls, Buttons, ExtCtrls, Menus,   Liste, Info,   Numerik,
   DynaAbout, FileUtil, IniFiles, ErrorTxt, ModEditor, Printers, HelpIntfs,
   Tabelle, Gleichung, GraphWin, PhaseWin, Optionen,
@@ -375,7 +376,7 @@ begin
       PhaseForm.Show;
       Starten1Click(Sender);
     end else begin
-        ShowMessage('DEBUG: Modellparameter falsch');
+       ShowMessage('DEBUG: Modellparameter falsch');
        PhaseForm.Close
     end;
   end else MessageDlg(ErrorTxt23, mtInformation,[mbOk], 0);
