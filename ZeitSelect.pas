@@ -27,6 +27,9 @@ uses (*unix,*) Classes, LCLType, Graphics, Forms, Controls, StdCtrls, ColorBox,
 const
   LB_ERR = -1;
 type
+
+  { TZeitkurveDlg }
+
   TZeitkurveDlg = class(TForm)
     ButtonPanel: TPanel;
     OKBtn: TBitBtn;
@@ -61,6 +64,7 @@ type
     RadioGroup2: TRadioGroup;
     RadioButton3: TRadioButton;
     RadioButton4: TRadioButton;
+    procedure FormClose(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure IncludeBtnClick(Sender: TObject);
     procedure ExcludeBtnClick(Sender: TObject);
@@ -71,6 +75,7 @@ type
     procedure SetItem(List: TListBox; Index: Integer);
     function GetFirstSelection(List: TListBox): Integer;
     procedure SetButtons;
+    procedure showHelp(Sender: TObject);
   private
     SelCount:integer;
   public
@@ -87,6 +92,11 @@ implementation
 procedure TZeitkurveDlg.FormCreate(Sender: TObject);
 begin
   SelCount:=0;
+end;
+
+procedure TZeitkurveDlg.FormClose(Sender: TObject);
+begin
+  close();
 end;
 
 procedure TZeitkurveDlg.FormPaint(Sender: TObject);
@@ -189,6 +199,11 @@ begin
                        //not (SrcEmpty or DstFull);
   ExcludeBtn.Enabled := not DstEmpty;
   ExAllBtn.Enabled := not DstEmpty;
+end;
+
+procedure TZeitkurveDlg.showHelp(Sender: TObject);
+begin
+    ShowMessage('Noch nicht verfügbar.' );
 end;
 
 function TZeitkurveDlg.GetFirstSelection(List: TListBox): Integer;

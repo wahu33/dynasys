@@ -372,10 +372,11 @@ begin
   if ObjektListe.ModellGueltig<>0 then begin
     PhaseForm:=TPhaseForm.Create(Application);
     if (PhaseForm.isClosed=false) then begin
-    PhaseForm.Show;
-    Starten1Click(Sender);
+      PhaseForm.Show;
+      Starten1Click(Sender);
     end else begin
-    PhaseForm.Close
+        ShowMessage('DEBUG: Modellparameter falsch');
+       PhaseForm.Close
     end;
   end else MessageDlg(ErrorTxt23, mtInformation,[mbOk], 0);
 end;

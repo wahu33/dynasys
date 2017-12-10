@@ -28,6 +28,9 @@ uses
 const
   LB_ERR = -1;
 type
+
+  { TPhasenAuswahl }
+
   TPhasenAuswahl = class(TForm)
     ButtonPanel: TPanel;
     OKBtn: TBitBtn;
@@ -64,6 +67,7 @@ type
     RadioButton3: TRadioButton;
     Label5: TLabel;
     Label6: TLabel;
+    procedure formClose(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure IncludeBtnClick(Sender: TObject);
     procedure ExcludeBtnClick(Sender: TObject);
@@ -75,6 +79,7 @@ type
     function GetFirstSelection(List: TCustomListBox): Integer;
     procedure SetButtons;
     procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+    procedure ShowHelp(Sender: TObject);
   private
     SelCount:integer;
   public
@@ -91,6 +96,12 @@ implementation
 procedure TPhasenAuswahl.FormCreate(Sender: TObject);
 begin
   SelCount:=0;
+end;
+
+procedure TPhasenAuswahl.FormClose(Sender: TObject);
+begin
+  isClosed:=true;
+  close();
 end;
 
 procedure TPhasenAuswahl.IncludeBtnClick(Sender: TObject);
@@ -216,6 +227,11 @@ begin
     MessageDlg(ErrorTxt31,mtError,[mbok],0);
     CanClose:=False;  Exit;
   end;
+end;
+
+procedure TPhasenAuswahl.ShowHelp(Sender: TObject);
+begin
+   ShowMessage('Noch nicht verfügbar!' );
 end;
 
 end.

@@ -1,10 +1,10 @@
 object MainForm: TMainForm
   Left = 271
-  Height = 40
+  Height = 47
   Top = 169
   Width = 844
   Caption = 'Dynasys 3.0'
-  ClientHeight = 11
+  ClientHeight = 47
   ClientWidth = 844
   Color = clBtnFace
   Font.Color = clWindowText
@@ -43,12 +43,11 @@ object MainForm: TMainForm
   OnCreate = FormCreate
   Position = poDefault
   ShowHint = True
-  LCLVersion = '1.8.0.4'
   Visible = True
   object StatusLine: TPanel
     Left = 0
     Height = 21
-    Top = -10
+    Top = 26
     Width = 844
     Align = alBottom
     Alignment = taLeftJustify

@@ -31,6 +31,9 @@ uses (*unix,*) Classes, Graphics, Forms, Controls, StdCtrls, LCLType,
 const
   LB_ERR = -1;
 type
+
+  { TTabelleDlg }
+
   TTabelleDlg = class(TForm)
     ButtonPanel: TPanel;
     OKBtn: TBitBtn;
@@ -51,6 +54,7 @@ type
     GroupBox2: TGroupBox;
     Label1: TLabel;
     SpinEdit1: TSpinEdit;
+    procedure FormClose(Sender: TObject);
     procedure IncludeBtnClick(Sender: TObject);
     procedure ExcludeBtnClick(Sender: TObject);
     procedure IncAllBtnClick(Sender: TObject);
@@ -80,6 +84,11 @@ begin
   Index := GetFirstSelection(SrcList);
   MoveSelected(SrcList, DstList.Items);
   SetItem(SrcList, Index);
+end;
+
+procedure TTabelleDlg.FormClose(Sender: TObject);
+begin
+  close();
 end;
 
 procedure TTabelleDlg.ExcludeBtnClick(Sender: TObject);

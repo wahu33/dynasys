@@ -14,7 +14,6 @@ object TabelleDlg: TTabelleDlg
   Font.Name = 'Arial'
   Font.Style = [fsBold]
   OnPaint = FormPaint
-  LCLVersion = '1.7'
   Visible = False
   object ButtonPanel: TPanel
     Left = 404
@@ -47,6 +46,7 @@ object TabelleDlg: TTabelleDlg
       Caption = 'Abbruch'
       Kind = bkCancel
       Margin = 2
+      OnClick = FormClose
       Spacing = -1
       TabOrder = 1
     end

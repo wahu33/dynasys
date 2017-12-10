@@ -23,7 +23,7 @@ unit PhaseWin;
   Zeichnet das Phasendiagramm
   HoleWerte, InitWerte, ExitWerte werden von Simulation aufgerufen.
 
-  Version: 2.0
+  Version: 3.0
 *)
 
 interface
@@ -36,7 +36,11 @@ uses
 
 
 type
+
+  { TPhaseForm }
+
   TPhaseForm = class(TForm)
+    MenuItem1: TMenuItem;
 	 ScrollBox1: TScrollBox;
 	 Image: TImage;
          MainMenu1: TMainMenu;

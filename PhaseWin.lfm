@@ -1,12 +1,12 @@
 object PhaseForm: TPhaseForm
   Left = 523
-  Height = 272
+  Height = 243
   Top = 229
-  Width = 446
+  Width = 470
   ActiveControl = ScrollBox1
   Caption = 'Phasendiagramm'
   ClientHeight = 243
-  ClientWidth = 446
+  ClientWidth = 470
   Color = clBtnFace
   Font.Color = clBlack
   Font.Height = -13
@@ -19,26 +19,25 @@ object PhaseForm: TPhaseForm
   OnResize = FormResize
   OnShow = FormShow
   Position = poDefault
-  LCLVersion = '1.8.0.4'
   Visible = True
   object ScrollBox1: TScrollBox
     Left = 0
     Height = 243
     Top = 0
-    Width = 446
+    Width = 470
     HorzScrollBar.Page = 90
     VertScrollBar.Page = 90
     Align = alClient
-    ClientHeight = 241
-    ClientWidth = 444
+    ClientHeight = 239
+    ClientWidth = 466
     Color = clBtnFace
     ParentColor = False
     TabOrder = 0
     object Image: TImage
       Left = 0
-      Height = 241
+      Height = 239
       Top = 0
-      Width = 444
+      Width = 466
       Align = alClient
       AutoSize = True
       Stretch = True
@@ -90,6 +89,9 @@ object PhaseForm: TPhaseForm
       object N4: TMenuItem
         Caption = '-'
       end
+    end
+    object MenuItem1: TMenuItem
+      Caption = 'MenuItem1'
     end
   end
 end
